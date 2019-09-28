@@ -36,6 +36,13 @@
         - Size
 
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.0 - GENERIC 
+-------------------------------------------------------------- */
+html{
+   font-family: 'Open Sans', sans-serif;
+}
+
 
 /*--------------------------------------------------------------
 4.0 - ELEMENTS 
@@ -55,7 +62,9 @@ h1{
 
 /* -- FRAMEWORK -- */
 
-
+#works{
+    padding: 3em 0;
+}
 
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
@@ -68,9 +77,20 @@ a{
     color: #fff;
 }
 
+a:hover, span{
+    color: #0eb493;
+}
+
 li{
     list-style: none;
 }
+
+
+/* -- NAVIGATION -- */
+nav{
+    display: inline-block;
+}
+
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES 
@@ -85,19 +105,23 @@ header p{
 
 #bg-green{
     background-color: #104f41;
+    padding: 8em 0;
 }
 
 #bg-drk-green{
     background-color: #10443f;
+    padding: 1em 0;
 }
 
 
 #features{
     background-color: #f4f7f9;
+    padding: 2em 0;
 }
 
 footer{
     background-color: #1ea78d;
+    padding: 4em 0;
 }
 
 
