@@ -50,13 +50,68 @@ html{
 
 /* -- TYPOGRAPHY -- */
 
-h1{
+h1, h4{
     font-family: 'Pacifico', cursive;
     color: #fff;
 }
 
+h1, h1+p{
+    display: inline-block;
+}
+
+
+h2{
+    text-transform: uppercase;
+     color: #0eb493
+}
+
+
+h4{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
 #works, #features h2{
     text-align: center;
+}
+
+
+ #bg-green p:first-child{
+    font-size: 2.5rem;
+    margin: 1em 0;
+}
+
+#bg-green p:nth-child(2){
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+
+
+@media only screen and (min-width: 768px){
+     #bg-green p:first-child{
+    font-size: 3rem;
+         margin: 0;
+    }
+
+    #bg-green p:nth-child(2){
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+     #bg-green p:first-child{
+    font-size: 3.5rem;
+         margin: 0;
+    }
+
+    #bg-green p:nth-child(2){
+        font-size: 3rem;
+        margin: 0;
+    }
+
 }
 
 
@@ -68,9 +123,40 @@ h1{
 
 /* -- FRAMEWORK -- */
 
-#works{
-    padding: 3em 0;
+h1, h1+p{
+    margin-block-start: 0.67em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
+#works{
+    padding: 5em 0;
+    width: 70%;
+
+}
+
+#tagline{
+    display: inline-block;
+}
+
+.row{
+    overflow: auto;
+}
+
+@media only screen and (min-width: 768px){
+    #works{
+        width: 50%;
+        padding: 6em 0;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #works{
+        width: 50%;
+        padding: 7em 0;
+    }
+}
+
 
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
@@ -91,10 +177,15 @@ li{
     list-style: none;
 }
 
+#bg-green>div{
+    text-align: center;
+}
 
 /* -- NAVIGATION -- */
-nav{
+nav li{
     display: inline-block;
+    margin-left: 1em;
+    margin-top: 2em;
 }
 
 
@@ -104,7 +195,12 @@ nav{
 
 /* -- COLOR -- */ 
 
-header p{
+
+h1+p{
+    color: #798d8a;
+}
+
+#bg-green p{
     color: #fff;
 }
 
@@ -116,18 +212,19 @@ header p{
 
 #bg-drk-green{
     background-color: #10443f;
-    padding: 1em 0;
+
 }
 
 
 #features{
     background-color: #f4f7f9;
-    padding: 2em 0;
+    padding: 5em 0;
 }
 
 footer{
     background-color: #1ea78d;
     padding: 4em 0;
+    border-top: #000 solid .2em;
 }
 
 
